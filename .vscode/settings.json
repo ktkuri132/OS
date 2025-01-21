@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stm32f4xx.h": "c",
+        "core_cm4.h": "c",
+        "core_cminstr.h": "c",
+        "system_stm32f4xx.h": "c"
+    }
+}
