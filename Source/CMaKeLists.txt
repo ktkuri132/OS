@@ -1,9 +1,0 @@
-include_directories(Sorce)
-
-set(
-    OS_SOURCES
-    boot.c
-)
-
-add_library(OS_LIB STATIC ${OS_SOURCES})
-

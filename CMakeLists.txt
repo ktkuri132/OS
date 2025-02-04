@@ -54,9 +54,11 @@ endif ()
 add_subdirectory(CORE)
 add_subdirectory(Source)
 add_subdirectory(User)
+add_subdirectory(BSP)
 
-set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/CORE/STM32F429IGTX_FLASH.ld)
+set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/CORE/STM32F429IGTx_FLASH.ld)
 
+add_link_options(-specs=nosys.specs)
 add_link_options(-Wl,-gc-sections,--print-memory-usage,-Map=${PROJECT_BINARY_DIR}/${PROJECT_NAME}.map)
 add_link_options(-mcpu=cortex-m4 -mthumb -mthumb-interwork)
 add_link_options(-T ${LINKER_SCRIPT})
@@ -67,9 +69,17 @@ add_link_options(-T ${LINKER_SCRIPT})
 
 add_executable(${PROJECT_NAME}.elf ${CMAKE_SOURCE_DIR}/User/main.c ${LINKER_SCRIPT})
 
-target_link_libraries(${PROJECT_NAME}.elf CORE_LIB USER_LIB OS_LIB)
+target_link_libraries(${PROJECT_NAME}.elf CORE_LIB User_LIB Source_LIB BSP_LIB)
 
-target_include_directories(${PROJECT_NAME}.elf PRIVATE CORE USER Source)
+include_directories(${CMAKE_SOURCE_DIR}/CORE)
+include_directories(${CMAKE_SOURCE_DIR}/User)
+include_directories(${CMAKE_SOURCE_DIR}/Source)
+
+target_include_directories(${PROJECT_NAME}.elf PUBLIC ${CMAKE_SOURCE_DIR}/CORE)
+target_include_directories(${PROJECT_NAME}.elf PUBLIC ${CMAKE_SOURCE_DIR}/User)
+target_include_directories(${PROJECT_NAME}.elf PUBLIC ${CMAKE_SOURCE_DIR}/Source)
+target_include_directories(${PROJECT_NAME}.elf PUBLIC ${CMAKE_SOURCE_DIR}/BSP)
+
 
 set(HEX_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.hex)
 set(BIN_FILE ${PROJECT_BINARY_DIR}/${PROJECT_NAME}.bin)
