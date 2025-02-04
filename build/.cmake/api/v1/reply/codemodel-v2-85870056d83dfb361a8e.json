@@ -1,0 +1,266 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "CORE",
+					"jsonFile" : "directory-CORE-Debug-ceda34a79eed14ab3f33.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "CORE",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "Source",
+					"jsonFile" : "directory-Source-Debug-93ebefb0dc4084c9ccf4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Source",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "User",
+					"jsonFile" : "directory-User-Debug-d2c76ea8569ac7d4de2e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "User",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "BSP",
+					"childIndexes" : 
+					[
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-BSP-Debug-01d1a4265031c46cb17b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "BSP",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "BSP/gpio",
+					"jsonFile" : "directory-BSP.gpio-Debug-67a9ec715c72888b7d15.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "BSP/gpio",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "BSP/i2c",
+					"jsonFile" : "directory-BSP.i2c-Debug-caff6fb38ed9c07f5511.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "BSP/i2c",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "BSP/spi",
+					"jsonFile" : "directory-BSP.spi-Debug-e5c7bde6d49b981b2198.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "BSP/spi",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "BSP/usart",
+					"jsonFile" : "directory-BSP.usart-Debug-5759282de83a2cc37e22.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "BSP/usart",
+					"targetIndexes" : 
+					[
+						8
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"name" : "OS",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 4,
+					"id" : "BSP_LIB::@22b1fb5bb3c77ef0a0a2",
+					"jsonFile" : "target-BSP_LIB-Debug-30bad281b6e7bd1181d5.json",
+					"name" : "BSP_LIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "CORE_LIB::@92b32f60b233355e6ac2",
+					"jsonFile" : "target-CORE_LIB-Debug-491e8fd32a89add659d7.json",
+					"name" : "CORE_LIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OS.elf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OS.elf-Debug-0bb646c3f92530655e94.json",
+					"name" : "OS.elf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Source_LIB::@43690dd2fb94c8e45e84",
+					"jsonFile" : "target-Source_LIB-Debug-f957412ff044712d59db.json",
+					"name" : "Source_LIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "User_LIB::@144b335042c98cdeffb4",
+					"jsonFile" : "target-User_LIB-Debug-ba808224afc47d3e82d3.json",
+					"name" : "User_LIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "gpio_LIB::@4f8767935d4d29f36a90",
+					"jsonFile" : "target-gpio_LIB-Debug-f9d2007defc991c08993.json",
+					"name" : "gpio_LIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "i2c_LIB::@f15d1781faf8ca26ea2f",
+					"jsonFile" : "target-i2c_LIB-Debug-f52c2654172262434abe.json",
+					"name" : "i2c_LIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "spi_LIB::@abd342a625bae881a34f",
+					"jsonFile" : "target-spi_LIB-Debug-ed08806f761d3d8d79b3.json",
+					"name" : "spi_LIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "usart_LIB::@926629ebb84efd47cb89",
+					"jsonFile" : "target-usart_LIB-Debug-ba96e5c7802956f73579.json",
+					"name" : "usart_LIB",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/34575/Desktop/Code/STM32/OS_V1_0/build",
+		"source" : "C:/Users/34575/Desktop/Code/STM32/OS_V1_0"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

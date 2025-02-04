@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Source_LIB.dir/boot.c.obj"
+  "CMakeFiles/Source_LIB.dir/boot.c.obj.d"
   "libSource_LIB.a"
   "libSource_LIB.pdb"
 )

@@ -4,21 +4,12 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/home/ktkuri/Desktop/OS/CORE/stratup.c" "/home/ktkuri/Desktop/OS/build/CORE/CMakeFiles/CORE_LIB.dir/stratup.c.obj"
-  "/home/ktkuri/Desktop/OS/CORE/system_stm32f4xx.c" "/home/ktkuri/Desktop/OS/build/CORE/CMakeFiles/CORE_LIB.dir/system_stm32f4xx.c.obj"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
-
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/34575/Desktop/Code/STM32/OS_V1_0/CORE/stratup.c" "CORE/CMakeFiles/CORE_LIB.dir/stratup.c.obj" "gcc" "CORE/CMakeFiles/CORE_LIB.dir/stratup.c.obj.d"
+  "C:/Users/34575/Desktop/Code/STM32/OS_V1_0/CORE/system_stm32f4xx.c" "CORE/CMakeFiles/CORE_LIB.dir/system_stm32f4xx.c.obj" "gcc" "CORE/CMakeFiles/CORE_LIB.dir/system_stm32f4xx.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
