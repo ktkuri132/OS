@@ -1,0 +1,2 @@
+arm-none-eabi-ar qc libSource_LIB.a CMakeFiles/Source_LIB.dir/boot.c.obj
+/usr/bin/arm-none-eabi-ranlib libSource_LIB.a

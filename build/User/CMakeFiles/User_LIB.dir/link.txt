@@ -1,0 +1,2 @@
+arm-none-eabi-ar qc libUser_LIB.a CMakeFiles/User_LIB.dir/test.c.obj
+/usr/bin/arm-none-eabi-ranlib libUser_LIB.a

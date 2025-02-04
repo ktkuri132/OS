@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="OS"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\CORE\;CMake Files\Source\;CMake Files\User\;CMake Files\BSP\;CMake Files\BSP\gpio\;CMake Files\BSP\i2c\;CMake Files\BSP\spi\;CMake Files\BSP\usart\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ktkuri/Desktop/OS/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OS.elf">
+				<Option output="/home/ktkuri/Desktop/OS/build/OS.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/User"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Source"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 OS.elf"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="OS.elf/fast">
+				<Option output="/home/ktkuri/Desktop/OS/build/OS.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/User"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Source"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 OS.elf/fast"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ktkuri/Desktop/OS/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ktkuri/Desktop/OS/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CORE_LIB">
+				<Option output="/home/ktkuri/Desktop/OS/build/CORE/libCORE_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/CORE"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/CORE/Makefile&quot;  VERBOSE=1 CORE_LIB"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/CORE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/CORE/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/CORE/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CORE_LIB/fast">
+				<Option output="/home/ktkuri/Desktop/OS/build/CORE/libCORE_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/CORE"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/CORE/Makefile&quot;  VERBOSE=1 CORE_LIB/fast"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/CORE/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/CORE/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/CORE/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Source_LIB">
+				<Option output="/home/ktkuri/Desktop/OS/build/Source/libSource_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/Source"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/Source/Source"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Source/Makefile&quot;  VERBOSE=1 Source_LIB"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Source/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Source/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Source/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Source_LIB/fast">
+				<Option output="/home/ktkuri/Desktop/OS/build/Source/libSource_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/Source"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/Source/Source"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Source/Makefile&quot;  VERBOSE=1 Source_LIB/fast"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Source/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Source/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/Source/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="User_LIB">
+				<Option output="/home/ktkuri/Desktop/OS/build/User/libUser_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/User"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/User/USER"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/User/Makefile&quot;  VERBOSE=1 User_LIB"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/User/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/User/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/User/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="User_LIB/fast">
+				<Option output="/home/ktkuri/Desktop/OS/build/User/libUser_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/User"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/User/USER"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/User/Makefile&quot;  VERBOSE=1 User_LIB/fast"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/User/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/User/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/User/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BSP_LIB">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/libBSP_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/gpio"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/i2c"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/spi"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/usart"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/Makefile&quot;  VERBOSE=1 BSP_LIB"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BSP_LIB/fast">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/libBSP_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/gpio"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/i2c"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/spi"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/usart"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/Makefile&quot;  VERBOSE=1 BSP_LIB/fast"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gpio_LIB">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/gpio/libgpio_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP/gpio"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/gpio"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/gpio/.."/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/gpio/Makefile&quot;  VERBOSE=1 gpio_LIB"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/gpio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/gpio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/gpio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gpio_LIB/fast">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/gpio/libgpio_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP/gpio"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/gpio"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/gpio/.."/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/gpio/Makefile&quot;  VERBOSE=1 gpio_LIB/fast"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/gpio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/gpio/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/gpio/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="i2c_LIB">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/i2c/libi2c_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP/i2c"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/i2c"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/i2c/.."/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/i2c/Makefile&quot;  VERBOSE=1 i2c_LIB"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/i2c/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/i2c/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/i2c/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="i2c_LIB/fast">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/i2c/libi2c_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP/i2c"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/i2c"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/i2c/.."/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/i2c/Makefile&quot;  VERBOSE=1 i2c_LIB/fast"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/i2c/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/i2c/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/i2c/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spi_LIB">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/spi/libspi_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP/spi"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/spi"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/spi/.."/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/spi/Makefile&quot;  VERBOSE=1 spi_LIB"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/spi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/spi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/spi/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="spi_LIB/fast">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/spi/libspi_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP/spi"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/spi"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/spi/.."/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/spi/Makefile&quot;  VERBOSE=1 spi_LIB/fast"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/spi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/spi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/spi/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="usart_LIB">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/usart/libusart_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP/usart"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/usart/.."/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/usart/Makefile&quot;  VERBOSE=1 usart_LIB"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/usart/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/usart/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/usart/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="usart_LIB/fast">
+				<Option output="/home/ktkuri/Desktop/OS/build/BSP/usart/libusart_LIB.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ktkuri/Desktop/OS/build/BSP/usart"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ktkuri/Desktop/OS/CORE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/Project"/>
+					<Add directory="/home/ktkuri/Desktop/OS/HARDWARE"/>
+					<Add directory="/home/ktkuri/Desktop/OS/BSP/usart/.."/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/arm-none-eabi"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include/c++/13.2.1/backward"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/include-fixed"/>
+					<Add directory="/usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/usart/Makefile&quot;  VERBOSE=1 usart_LIB/fast"/>
+					<CompileFile command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/usart/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/usart/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/bin/make -j16 -f &quot;/home/ktkuri/Desktop/OS/build/BSP/usart/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/gpio/gpio.c">
+			<Option target="BSP_LIB"/>
+			<Option target="gpio_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/gpio/gpio.h">
+			<Option target="BSP_LIB"/>
+			<Option target="gpio_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/gpio/stm32f4xx_gpio.c">
+			<Option target="BSP_LIB"/>
+			<Option target="gpio_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/gpio/stm32f4xx_gpio.h">
+			<Option target="BSP_LIB"/>
+			<Option target="gpio_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/i2c/hardi2c.c">
+			<Option target="BSP_LIB"/>
+			<Option target="i2c_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/i2c/hardi2c.h">
+			<Option target="BSP_LIB"/>
+			<Option target="i2c_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/i2c/softi2c.c">
+			<Option target="BSP_LIB"/>
+			<Option target="i2c_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/i2c/softi2c.h">
+			<Option target="BSP_LIB"/>
+			<Option target="i2c_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/i2c/stm32f4xx_i2c.c">
+			<Option target="BSP_LIB"/>
+			<Option target="i2c_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/i2c/stm32f4xx_i2c.h">
+			<Option target="BSP_LIB"/>
+			<Option target="i2c_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/misc.c">
+			<Option target="BSP_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/misc.h">
+			<Option target="BSP_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/spi/hardspi.c">
+			<Option target="BSP_LIB"/>
+			<Option target="spi_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/spi/hardspi.h">
+			<Option target="BSP_LIB"/>
+			<Option target="spi_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/spi/softspi.c">
+			<Option target="BSP_LIB"/>
+			<Option target="spi_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/spi/softspi.h">
+			<Option target="BSP_LIB"/>
+			<Option target="spi_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/stm32f4xx_rcc.c">
+			<Option target="BSP_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/stm32f4xx_rcc.h">
+			<Option target="BSP_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/sys.c">
+			<Option target="BSP_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/sys.h">
+			<Option target="BSP_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/usart/Serial.c">
+			<Option target="BSP_LIB"/>
+			<Option target="usart_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/usart/Serial.h">
+			<Option target="BSP_LIB"/>
+			<Option target="usart_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/usart/stm32f4xx_usart.c">
+			<Option target="BSP_LIB"/>
+			<Option target="usart_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/usart/stm32f4xx_usart.h">
+			<Option target="BSP_LIB"/>
+			<Option target="usart_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/usart/usart.c">
+			<Option target="BSP_LIB"/>
+			<Option target="usart_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/usart/usart.h">
+			<Option target="BSP_LIB"/>
+			<Option target="usart_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/CORE/STM32F429IGTx_FLASH.ld">
+			<Option target="OS.elf"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/CORE/stratup.c">
+			<Option target="CORE_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/CORE/system_stm32f4xx.c">
+			<Option target="CORE_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/CORE/system_stm32f4xx.h">
+			<Option target="CORE_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/Source/boot.c">
+			<Option target="Source_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/Source/boot.h">
+			<Option target="Source_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/User/main.c">
+			<Option target="OS.elf"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/User/test.c">
+			<Option target="User_LIB"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/CORE/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CORE\"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/Source/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Source\"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/User/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\User\"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\BSP\"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/gpio/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\BSP\gpio\"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/i2c/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\BSP\i2c\"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/spi/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\BSP\spi\"/>
+		</Unit>
+		<Unit filename="/home/ktkuri/Desktop/OS/BSP/usart/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\BSP\usart\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
